@@ -17,21 +17,32 @@
   <body>
     <div class="cointainer">
       <div class="weather-wrap">
-        <h1>Boston</h1>
-        <ul>
-          <li>Friday 05:00</li>
-          <li>Clear</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <ion-icon id="sunny" name="sunny-outline"></ion-icon>
-            12°C | °F
-          </div>
+        <div class="overview">
+          <h1>Boston</h1>
           <ul>
-            <li>Precipitation: 0%</li>
-            <li>Humidity: 73%</li>
-            <li>Wind: 2 km/hr</li>
+            <li><small>Friday 05:00</small></li>
+            <li><small>Clear</small></li>
           </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature weather-temperature">
+                <ion-icon
+                  class="float-left"
+                  id="sunny"
+                  name="sunny-outline"
+                ></ion-icon>
+                <div class="float-left">
+                  <strong>12</strong>
+                  <span class="units"> °C | °F </span>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li>Precipitation: 0%</li>
+              <li>Humidity: 73%</li>
+              <li>Wind: 2 km/hr</li>
+            </ul>
+          </div>
         </div>
       </div>
       <footer>
