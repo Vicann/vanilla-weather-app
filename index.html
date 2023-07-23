@@ -13,12 +13,47 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="cointainer">
-      <h1>Hello World</h1>
-      <a href="" class="btn btn-primary">Click me</a>
+      <div cladd="weather-wrap">
+        <h1>Boston</h1>
+        <ul>
+          <li>Friday 05:00</li>
+          <li>Clear</li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <ion-icon id="sunny" name="sunny-outline"></ion-icon>
+            12°C | °F
+          </div>
+          <ul>
+            <li>Precipitation: 0%</li>
+            <li>Humidity: 73%</li>
+            <li>Wind: 2 km/hr</li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        Open source code by
+        <a href="https://github.com/Vicann/vanilla-weather-app" target="_blank"
+          >Victoria Okoro</a
+        >
+      </footer>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="src/app.js"></script>
   </body>
 </html>
