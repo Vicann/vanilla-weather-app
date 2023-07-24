@@ -13,6 +13,7 @@ li {
   font-size: 20px;
   font-weight: 100px;
   line-height: 20px;
+  text-transform: capitalize;
 }
 
 ul {
@@ -37,16 +38,13 @@ footer {
   margin-bottom: 20px;
 }
 
-#sunny {
-  font-size: 60px;
-}
-
 .weather-temperature ion-icon {
   position: relative;
   margin-right: 10px;
   height: 64px;
   width: 64px;
   top: 10px;
+  font-size: 60px;
 }
 
 .weather-temperature strong {

@@ -11,36 +11,38 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <div class="cointainer">
       <div class="weather-wrap">
         <div class="overview">
-          <h1>Boston</h1>
+          <h1 id="city"></h1>
           <ul>
-            <li><small>Friday 05:00</small></li>
-            <li><small>Clear</small></li>
+            <li>
+              <small><span id="date">Friday 05:00</span></small>
+            </li>
+            <li id="description"><small></small></li>
           </ul>
           <div class="row">
             <div class="col-6">
               <div class="d-flex weather-temperature weather-temperature">
-                <ion-icon
-                  class="float-left"
-                  id="sunny"
-                  name="sunny-outline"
-                ></ion-icon>
+                <img src="" class="float-left" id="icon" />
                 <div class="float-left">
-                  <strong>12</strong>
+                  <strong id="temperature"></strong>
                   <span class="units"> °C | °F </span>
                 </div>
               </div>
             </div>
             <ul>
               <li>Precipitation: 0%</li>
-              <li>Humidity: 73%</li>
-              <li>Wind: 2 km/hr</li>
+              <li>Humidity: <span id="humidity"></span></li>
+              <li>Wind: <span id="wind"> km/hr</span></li>
             </ul>
           </div>
         </div>
@@ -52,6 +54,8 @@
         >
       </footer>
     </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
