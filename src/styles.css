@@ -70,3 +70,21 @@ footer {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+
+.weather-forcast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forcast-date {
+  font-size: 16px;
+  opacity: 0.4;
+}
+
+.weather-forcast-temperatures {
+  font-size: 13px;
+}
+
+.weather-forcast-temperature-min {
+  font-size: 13px;
+}
