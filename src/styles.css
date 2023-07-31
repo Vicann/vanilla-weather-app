@@ -26,16 +26,16 @@ footer {
 }
 
 .weather-wrap {
-  width: 600px;
+  width: 1000px;
   height: 540px;
-  max-width: 700px;
-  margin: 30px auto;
+  max-width: 1000px;
+  margin: 40px auto;
   padding: 20px;
   border: 5px solid white;
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url("pink-city.jpg");
-  background-size: 800px;
+  background-size: 1000px;
 }
 
 .overview {
@@ -95,4 +95,9 @@ footer {
 
 #button {
   background-color: #a569a0;
+}
+
+#current {
+  background-color: #eb8cae;
+  position: static;
 }
