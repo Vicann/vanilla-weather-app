@@ -1,5 +1,5 @@
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Orbitron", sans-serif;
 }
 h1 {
   font-size: 20px;
@@ -26,12 +26,16 @@ footer {
 }
 
 .weather-wrap {
+  width: 600px;
+  height: 540px;
   max-width: 700px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid pink;
+  border: 5px solid white;
   border-radius: 10px;
   margin-bottom: 20px;
+  background-image: url("pink-city.jpg");
+  background-size: 800px;
 }
 
 .overview {
@@ -48,7 +52,7 @@ footer {
 }
 
 .weather-temperature strong {
-  color: pink;
+  color: black;
   position: relative;
   font-size: 64px;
   line-height: 1px;
@@ -78,7 +82,7 @@ footer {
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.4;
+  color: black;
 }
 
 .weather-forecast-temperatures {
@@ -87,4 +91,8 @@ footer {
 
 .weather-forecast-temperature-min {
   font-size: 13px;
+}
+
+#button {
+  background-color: #a569a0;
 }
