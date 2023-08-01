@@ -103,3 +103,8 @@ footer {
   background-color: #eb8cae;
   position: static;
 }
+
+#city {
+  position: relative;
+  top: 5px;
+}

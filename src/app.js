@@ -39,14 +39,14 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-      <div class="col-2">
+      <div class="col">
         <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
         <img
           src="http://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
           }@2x.png"
           alt=""
-          width="70"
+          width="50"
         />
         <div class="weather-forecast-temperatures">
           <span class="weather-forecast-temperature-max">${Math.round(
@@ -109,64 +109,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
-}
-
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusTemperature = null;
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
-
-search("Soweto");
-
-function currentPosition(position) {
-  let lat = position.coords.latitude;
-  let long = position.coords.longitude;
-  let apiKey = "0efb4fc16a9ed98dc0b3aafd8491d6ad";
-  let apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
-  axios.get(apiURL).then(showCurrentTemp);
-}
-
-function showCurrentTemp(response) {
-  let currentTemp = Math.round(response.data.main.temp);
-  let currentWind = response.data.wind.speed;
-  let currentHumidity = response.data.main.humidity;
-  let description = response.data.weather[0].main;
-  let tempVal = document.querySelector("#temperature");
-  let windVal = document.querySelector("#wind");
-  let humidityVal = document.querySelector("#humidity");
-  let currentPlaceHolder = document.querySelector("#description");
-  let currentCityName = document.querySelector("#city");
-
-  windVal.innerHTML = `Wind: ${currentWind} km/h`;
-  humidityVal.innerHTML = `Humidity: ${currentHumidity}%`;
-  tempVal.innerHTML = currentTemp;
-  currentPlaceHolder.innerHTML = description;
-  currentCityName = response.data.name;
-}
-
-let currentForm = document.querySelector("#current");
-currentForm.addEventListener("submit", currentPosition);
-
-navigator.geolocation.getCurrentPosition(currentPosition);
+search("Boston");
