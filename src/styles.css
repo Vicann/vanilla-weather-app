@@ -12,7 +12,7 @@ li {
   list-style: none;
   font-size: 20px;
   font-weight: 100px;
-  line-height: 20px;
+  line-height: 25px;
   text-transform: capitalize;
 }
 
@@ -26,7 +26,7 @@ footer {
 }
 
 .weather-wrap {
-  width: 1000px;
+  width: 800px;
   height: 540px;
   max-width: 1000px;
   margin: 40px auto;
@@ -48,13 +48,13 @@ footer {
   height: 64px;
   width: 64px;
   top: 10px;
-  font-size: 60px;
+  font-size: 80px;
 }
 
 .weather-temperature strong {
   color: black;
   position: relative;
-  font-size: 64px;
+  font-size: 70px;
   line-height: 1px;
   font-weight: 400;
   top: 40px;
@@ -76,21 +76,23 @@ footer {
 }
 
 .weather-forecast {
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 30px;
+  position: relative;
 }
 
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 20px;
   color: black;
+  position: relative;
+  left: 15px;
 }
 
-.weather-forecast-temperatures {
-  font-size: 13px;
+.weather-forecast-temperature-max {
+  font-size: 20px;
 }
 
 .weather-forecast-temperature-min {
-  font-size: 13px;
+  font-size: 20px;
 }
 
 #button {
