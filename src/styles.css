@@ -1,5 +1,11 @@
 body {
   font-family: "Orbitron", sans-serif;
+  background: rgb(244, 223, 227);
+  background: linear-gradient(
+    90deg,
+    rgba(244, 223, 227, 1) 0%,
+    rgba(159, 94, 150, 1) 100%
+  );
 }
 h1 {
   font-size: 20px;
@@ -31,7 +37,7 @@ footer {
   max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
-  border: 5px solid white;
+  border: 5px solid black;
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url("pink-city.jpg");
@@ -107,4 +113,16 @@ footer {
 #city {
   position: relative;
   top: 5px;
+}
+
+a:link {
+  color: #d5749e;
+}
+
+a:visited {
+  color: brown;
+}
+
+a:hover {
+  color: hotpink;
 }
