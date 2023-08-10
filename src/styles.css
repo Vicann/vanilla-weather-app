@@ -90,7 +90,7 @@ footer {
   font-size: 20px;
   color: black;
   position: relative;
-  left: 15px;
+  left: 11px;
 }
 
 .weather-forecast-temperature-max {
@@ -125,4 +125,9 @@ a:visited {
 
 a:hover {
   color: hotpink;
+}
+
+.elements {
+  position: relative;
+  top: -40px;
 }
